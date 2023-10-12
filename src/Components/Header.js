@@ -2,11 +2,6 @@ import React, { Component } from "react";
 import "./style.css";
 
 class Header extends Component {
-  //   state = {
-  //     sun: "white",
-  //     moon: "black",
-  //   };
-
   sun = () => {
     this.props.sun("white");
   };
