@@ -4,10 +4,16 @@ import "./style.css";
 class Header extends Component {
   sun = () => {
     this.props.sun("white");
+    // localStorage.setItem("sunValue",this.parent);
+
   };
 
   moon = () => {
     this.props.moon("black");
+    // localStorage.setItem("moonValue",this.props.parent);
+    // localStorage.setItem("moonValue",this.parent);
+
+
   };
 
   render() {
