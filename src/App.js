@@ -11,13 +11,17 @@ class App extends Component {
 
   handleCallbackSun = (sun) => {
     this.setState({ parent: sun });
-    localStorage.setItem("sunValue",this.state.parent)
+    localStorage.setItem("sunValue",this.state.parent);
+    console.log(localStorage.getItem("sunValue"),this.state.parent);
   };
 
   handleCallbackMoon = (moon) => {
     this.setState({ parent: moon });
     localStorage.setItem("moonValue",this.state.parent)
+    console.log(localStorage.getItem("moonValue"),this.state.parent);
+
   };
+
 
   render() {
     const { parent } = this.state;
